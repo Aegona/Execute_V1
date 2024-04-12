@@ -118,18 +118,22 @@ local function UQBW_fake_script() -- TextButton.LocalScript
 	
 		if success then
 			print("Script executed successfully")
+			--[[
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Script executed successfully";
 				Text = "Script Runing...";
 				Icon = "rbxassetid://12900311398";
 			})
+			--]]
 		else
 			warn("Error executing script:", result)
+			--[[
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "Error executing script";
 				Text = result;
 				Icon = "rbxassetid://2592670412";
 			})
+			--]]
 		end
 	end)
 	
